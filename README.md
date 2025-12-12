@@ -1,25 +1,2 @@
-# How to use
-> npm run [script]
-
-for any script in package.json
-
-# To update npm dependencies
-```bash
-npm run update-packages
-```
-
-# For images added in html or javascript
-```bash
-npm install --save-dev html-loader
-```
-add the following to your webpack.common.js > module > rules:
-```bash
-{
-    test: /\.html$/i,
-    loader: "html-loader",
-},
-{
-    test: /\.(png|svg|jpg|jpeg|gif)$/i,
-    type: "asset/resource",
-},
-```
+This website replica is based on https://buena.com/ from 2025-12-09. 
+It is used for personal learning purposes.
