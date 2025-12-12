@@ -14,7 +14,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             template: "./src/template.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "mission.html",
+            template: "./src/pages/mission.html",
         }),
     ],
     module: {

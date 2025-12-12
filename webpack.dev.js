@@ -6,5 +6,11 @@ module.exports = merge(common, {
     devtool: "eval-source-map",
     devServer: {
         watchFiles: ["./src/template.html"],
+        historyApiFallback: {
+            rewrites: [
+                { from: /^\/home/, to: '/index.html' },
+                { from: /^\/mission/, to: '/mission.html' },
+            ]
+        },
     },
 });
