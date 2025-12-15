@@ -18,8 +18,8 @@ module.exports = {
             template: "./src/template.html",
         }),
         new HtmlWebpackPlugin({
-            filename: "mission.html",
-            template: "./src/pages/mission.html",
+            filename: "home.html",
+            template: "./src/pages/home.html",
         }),
     ],
     module: {
