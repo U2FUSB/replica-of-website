@@ -21,6 +21,10 @@ module.exports = {
             filename: "home.html",
             template: "./src/pages/home.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "weg.html",
+            template: "./src/pages/weg.html",
+        }),
     ],
     module: {
         rules: [

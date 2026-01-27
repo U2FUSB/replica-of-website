@@ -7,7 +7,11 @@ module.exports = merge(common, {
     devServer: {
         watchFiles: ["./src/template.html"],
         historyApiFallback: {
-            rewrites: [{ from: /^\/home/, to: "/home.html" }],
+            rewrites: [
+                { from: /^\/manifest/, to: "/template.html" },
+                { from: /^\/home/, to: "/home.html" },
+                { from: /^\/weg/, to: "/weg.html" },
+            ],
         },
     },
 });
