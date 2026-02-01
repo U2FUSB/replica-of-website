@@ -37,6 +37,10 @@ module.exports = {
             filename: "nachfolge.html",
             template: "./src/pages/nachfolge.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "partnerschaft.html",
+            template: "./src/pages/partnerschaft.html",
+        }),
     ],
     module: {
         rules: [

@@ -14,6 +14,7 @@ module.exports = merge(common, {
                 { from: /^\/mietverwaltung/, to: "/mietverwaltung.html" },
                 { from: /^\/mission/, to: "/template.html" },
                 { from: /^\/nachfolge/, to: "/nachfolge.html" },
+                { from: /^\/partnerschaft/, to: "/partnerschaft.html" },
             ],
         },
     },
