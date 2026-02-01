@@ -28,6 +28,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "mietverwaltung.html",
             template: "./src/pages/mietverwaltung.html",
+        }),        new HtmlWebpackPlugin({
+            filename: "template.html",
+            template: "./src/template.html",
         }),
     ],
     module: {
