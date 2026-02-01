@@ -41,6 +41,10 @@ module.exports = {
             filename: "partnerschaft.html",
             template: "./src/pages/partnerschaft.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "karriere.html",
+            template: "./src/pages/karriere.html",
+        }),
     ],
     module: {
         rules: [
