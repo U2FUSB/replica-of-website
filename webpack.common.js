@@ -25,6 +25,10 @@ module.exports = {
             filename: "weg.html",
             template: "./src/pages/weg.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "mietverwaltung.html",
+            template: "./src/pages/mietverwaltung.html",
+        }),
     ],
     module: {
         rules: [
