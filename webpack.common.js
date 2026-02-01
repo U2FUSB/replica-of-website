@@ -18,6 +18,10 @@ module.exports = {
             template: "./src/template.html",
         }),
         new HtmlWebpackPlugin({
+            filename: "template.html",
+            template: "./src/template.html",
+        }),
+        new HtmlWebpackPlugin({
             filename: "home.html",
             template: "./src/pages/home.html",
         }),
@@ -28,9 +32,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "mietverwaltung.html",
             template: "./src/pages/mietverwaltung.html",
-        }),        new HtmlWebpackPlugin({
-            filename: "template.html",
-            template: "./src/template.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "nachfolge.html",
+            template: "./src/pages/nachfolge.html",
         }),
     ],
     module: {
