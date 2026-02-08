@@ -1,14 +1,11 @@
 const header = document.querySelector("header");
-const threshold = 10; // px at which the fold starts
-
 const handleScroll = () => {
-    const isScrolled = window.scrollY > threshold;
-    header.dataset.scrolled = isScrolled;
-    console.log(isScrolled ? "isScrolled" : "notScrolled");
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > 80) {
+        header.dataset.scrolled = "true";
+    } else if (currentScrollY < 10) {
+        header.dataset.scrolled = "false";
+    }
 };
-
-// Use passive listener for better scroll performance
 window.addEventListener("scroll", handleScroll, { passive: true });
-
-// Initial check in case the page is refreshed while scrolled
 handleScroll();
