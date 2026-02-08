@@ -1,3 +1,2 @@
-import "./style.css";
-import "./reset.css";
+import "./css/index.css";
 import "./js/headerFold.js";

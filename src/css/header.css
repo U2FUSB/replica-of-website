@@ -1,25 +1,3 @@
-:root {
-    /* Color Palette */
-    --brand-dark: #000000;
-    --brand-gray: #6b6b6b;
-    --brand-border: #efefef;
-    --brand-bg: #ffffff;
-
-    /* Spacing Logic */
-    --pad-x: 200px;
-    --pad-y: 24px;
-    --col-gap: 70px; /* Spacing between li items */
-
-    /* Typography */
-    --font-ui: "Inter", system-ui, -apple-system, sans-serif;
-    --fs-logo: 1.3rem;
-    --fs-h6: 11px;
-    --fs-link: 14px;
-
-    /* Layering */
-    --z-header: 5;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -134,31 +112,4 @@ header .offer .offer-button {
         max-height 0.4s ease,
         opacity 0.5s ease,
         margin 0.8s ease;
-}
-
-/* main */
-/* footer */
-footer {
-}
-footer .company {
-}
-footer .internal-links {
-}
-footer .internal-links h6 {
-}
-footer .internal-links a {
-}
-footer .social-media {
-}
-footer .social-media a {
-}
-footer .social-media .language {
-}
-footer .trademark {
-}
-footer .legal-references {
-}
-footer .legal-references a {
-}
-footer .logo {
 }
