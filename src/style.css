@@ -1,3 +1,138 @@
-body {
-    
+:root {
+    /* Color Palette */
+    --brand-dark: #000000;
+    --brand-gray: #6b6b6b;
+    --brand-border: #efefef;
+    --brand-bg: #ffffff;
+
+    /* Spacing Logic */
+    --pad-x: 200px;
+    --pad-y: 24px;
+    --col-gap: 70px; /* Spacing between li items */
+
+    /* Typography */
+    --font-ui: "Inter", system-ui, -apple-system, sans-serif;
+    --fs-logo: 1.3rem;
+    --fs-h6: 11px;
+    --fs-link: 14px;
+
+    /* Layering */
+    --z-header: 5;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: var(--pad-y) var(--pad-x);
+    background-color: var(--brand-bg);
+    border-bottom: 1px solid var(--brand-border);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    font-family: var(--font-ui);
+}
+
+header .company,
+header .internal-links {
+    display: grid;
+}
+
+header .company {
+    grid-column: 1;
+    font-size: var(--fs-logo);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--brand-dark);
+    letter-spacing: -0.04em;
+    margin-right: var(--col-gap);
+}
+
+header .internal-links {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: var(--col-gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .internal-links h6 {
+    font-size: var(--fs-h6);
+    color: var(--brand-gray);
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+header .internal-links a {
+    display: block;
+    text-decoration: none;
+    color: var(--brand-dark);
+    font-size: var(--fs-link);
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+header .internal-links a:hover {
+    opacity: 0.5;
+}
+
+header .offer {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+header .offer h6 {
+    font-size: var(--fs-h6);
+    color: var(--brand-gray);
+    margin: 0;
+    font-weight: 500;
+}
+
+header .offer .offer-button {
+    background-color: transparent;
+    color: var(--brand-dark);
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid var(--brand-border);
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: var(--fs-link);
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+header .offer .offer-button:hover {
+    border: 3px solid var(--brand-border);
+}
+/* main */
+/* footer */
+footer {
+}
+footer .company {
+}
+footer .internal-links {
+}
+footer .internal-links h6 {
+}
+footer .internal-links a {
+}
+footer .social-media {
+}
+footer .social-media a {
+}
+footer .social-media .language {
+}
+footer .trademark {
+}
+footer .legal-references {
+}
+footer .legal-references a {
+}
+footer .logo {
 }
