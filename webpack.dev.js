@@ -9,10 +9,10 @@ module.exports = merge(common, {
         historyApiFallback: {
             rewrites: [
                 { from: /^\/manifest/, to: "/template.html" },
+                { from: /^\/mission/, to: "/template.html" },
                 { from: /^\/home/, to: "/home.html" },
                 { from: /^\/weg/, to: "/weg.html" },
                 { from: /^\/mietverwaltung/, to: "/mietverwaltung.html" },
-                { from: /^\/mission/, to: "/template.html" },
                 { from: /^\/nachfolge/, to: "/nachfolge.html" },
                 { from: /^\/partnerschaft/, to: "/partnerschaft.html" },
                 { from: /^\/karriere/, to: "/karriere.html" },
