@@ -22,8 +22,7 @@
 
 header {
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    align-items: center;
     padding: var(--pad-y) var(--pad-x);
     background-color: var(--brand-bg);
     border-bottom: 1px solid var(--brand-border);
@@ -74,6 +73,33 @@ header .internal-links a {
     font-size: var(--fs-link);
     margin-bottom: 4px;
     font-weight: 400;
+
+    /* Animation Essentials */
+    max-height: 50px; /* Needs a fixed value, not 'auto' */
+    opacity: 1;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.5s ease,
+        margin 0.8s ease;
+}
+
+/* Folded state: triggered by JS adding [data-scrolled="true"] */
+header[data-scrolled="true"] .internal-links a {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    pointer-events: none; /* Disable interaction when folded */
+}
+
+header[data-scrolled="true"] {
+    padding-bottom: var(--pad-y);
+    transition: padding 0.8s ease;
+    & .internal-links h6 {
+        margin: 0;
+    }
+    & .offer .offer-button {
+        margin: 0;
+    }
 }
 
 header .internal-links a:hover {
@@ -81,6 +107,7 @@ header .internal-links a:hover {
 }
 
 header .offer {
+    align-self: flex-start;
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -90,26 +117,25 @@ header .offer {
 header .offer h6 {
     font-size: var(--fs-h6);
     color: var(--brand-gray);
-    margin: 0;
     font-weight: 500;
 }
 
 header .offer .offer-button {
     background-color: transparent;
     color: var(--brand-dark);
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 5px 10px;
+    margin: -10px -11px;
     border: 1px solid var(--brand-border);
     border-radius: 90px;
     text-decoration: none;
     font-size: var(--fs-link);
     font-weight: 500;
-    transition: opacity 0.2s ease;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.5s ease,
+        margin 0.8s ease;
 }
 
-header .offer .offer-button:hover {
-    border: 3px solid var(--brand-border);
-}
 /* main */
 /* footer */
 footer {
